@@ -1,5 +1,5 @@
 [Unit]
-Description=DCP WiFi Autoconnect
+Description=WiFi Autoconnect
 After=network.target
 
 [Service]
@@ -7,7 +7,7 @@ Type=simple
 Restart=always
 RestartSec=1
 User=root
-ExecStart=/bin/bash /usr/local/bin/dcp-pi-wifi-connect.sh
+ExecStart=/bin/bash /usr/local/bin/pi-wifi-connect.sh
 
 [Install]
 WantedBy=multi-user.target
